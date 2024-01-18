@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Video Processing App</title>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container mt-5">
+    <h1 class="mb-4">File Processing App</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="attachment" class="form-label">Attachment:</label>
+        <input
+          type="file"
+          class="form-control"
+          name="attachment"
+          accept="video/*,image/*"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="resolution" class="form-label"
+          >Resolution (e.g., 1280x720):</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="resolution"
+          placeholder="Default: 1280x720"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Process and Download
+      </button>
+    </form>
+
+    <!-- Include Bootstrap JS and Popper.js from a CDN (required for Bootstrap components) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
